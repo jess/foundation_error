@@ -1,4 +1,4 @@
-Example vaniella app to show foundation error:
+# Example vanilla app to show foundation error:
 
 ```
 jessmbp.local ruby 2.1.0p0 ~/projects $ chruby
@@ -18,16 +18,6 @@ jessmbp.local ruby 2.1.0p0 ~/projects/foundation_error $ bundle show
 foundation-rails
 /Users/jess/.gem/ruby/2.1.0/gems/foundation-rails-5.1.0.0
 
-# works find on initial boot
-jessmbp.local ruby 2.1.0p0 ~/projects/foundation_error $ rails s
-=> Booting WEBrick
-=> Rails 4.0.2 application starting in development on
-http://0.0.0.0:3000
-=> Run `rails server -h` for more startup options
-=> Ctrl-C to shutdown server
-
-...
-
 # install foundation
 jessmbp.local ruby 2.1.0p0 ~/projects/foundation_error $ rails g
 foundation:install
@@ -42,8 +32,23 @@ Overwrite
 (enter "h" for help) [Ynaqdh] Y
        force  app/views/layouts/application.html.erb
 
-# setup a real view
+```
 
+## works fine on initial boot
+
+```
+jessmbp.local ruby 2.1.0p0 ~/projects/foundation_error $ rails s
+=> Booting WEBrick
+=> Rails 4.0.2 application starting in development on
+http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+
+```
+
+## setup a real view
+
+```
 # config/routes
 root 'application#root'
 
